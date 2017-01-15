@@ -2,4 +2,13 @@ configuration: Release
 
 #restore  packages before running msbuild
 before_build:
-  - nuget restore StrapUp.Forms
+  - nuget restore
+
+build:
+  project: StrapUp.Forms/StrapUp.csproj
+  publish_nuget: true
+  publish_nuget_symbols: true
+  include_nuget_references: true
+  parallel: true
+  verbosity: normal
+cache: src\packages -> src\**\packages.config
