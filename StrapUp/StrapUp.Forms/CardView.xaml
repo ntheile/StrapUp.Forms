@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout Spacing="0" BackgroundColor="#CDCDD1"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="StrapUp.Forms.Controls.CardView">
+    <StackLayout.GestureRecognizers>
+        <TapGestureRecognizer Tapped="LinkClicked"></TapGestureRecognizer>
+    </StackLayout.GestureRecognizers>
+
+    <StackLayout Padding="8,8,8,8" Spacing="0">
+        <StackLayout Padding="0,0,0,0" Spacing="0">
+            <!--CARDVIEW IMAGE-->
+            <Image
+            Source="{Binding Source}"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="StartAndExpand"
+            Aspect="AspectFill"
+            />
+        </StackLayout>
+        <StackLayout BackgroundColor="White" Padding="3,0,3,0" Spacing="0">
+            <!-- CARDVIEW TEXT -->
+            <Label Text="{Binding CardViewText, Mode=TwoWay}"
+                LineBreakMode="WordWrap"
+                VerticalOptions="End"
+                FontSize="Large"
+                TextColor="Black"
+                FontAttributes="Bold"/>
+
+
+            <!-- CARDVIEW DETAIL -->
+            <Label Text="{Binding CardViewDetail, Mode=TwoWay}" 
+            LineBreakMode="WordWrap" 
+            VerticalOptions="End" TextColor="Gray"
+            />
+
+        </StackLayout>
+
+       
+    </StackLayout>
+    
+</StackLayout>

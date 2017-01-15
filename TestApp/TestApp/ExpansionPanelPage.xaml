@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:strapup="clr-namespace:StrapUp.Forms.Controls;assembly=StrapUp.Forms"
+             xmlns:local="clr-namespace:TestApp;assembly=TestApp"
+             xmlns:xLabs="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             xmlns:xreference="clr-namespace:Xamarin.Forms.Xaml"
+             x:Class="TestApp.ExpansionPanelPage" 
+             BackgroundColor="Gray"
+             Padding="5,5,5,5">
+    <ScrollView>
+        <StackLayout x:Name="SL"  HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="FillAndExpand" >
+
+           
+            <!--<ListView x:Name="xList" ItemsSource="{Binding MyItems, Mode=TwoWay}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <strapup:ExpansionPanel BackgroundColor="White" 
+                                                        HideIcon="False" 
+                                                        Command="{Binding OnRowClick}" 
+                                                        ParentViewCellLevel="3" >
+                                    <strapup:ExpansionPanel.CollapsedPanel>
+                                        <StackLayout HorizontalOptions="FillAndExpand">
+                                            <Label Text="{Binding text}" 
+                                            FontSize="Large" 
+                                            FontAttributes="Bold"></Label>
+                                        </StackLayout>
+                                    </strapup:ExpansionPanel.CollapsedPanel>
+
+                                    <strapup:ExpansionPanel.ExpandedPanel  >
+                                        <StackLayout>
+
+
+                                            --><!--<Label Text="{Binding BindingContext.MyItems[0].text, Source={Reference MyRoot}}"></Label>
+                                            <Label Text="{Binding details[0].text1, StringFormat='Poop {0}' }"></Label>--><!--
+
+                                            <xLabs:RepeaterView x:Name="repeater" x:TypeArguments="local:Detail"
+                                                                ItemsSource="{Binding details}">
+                                                <xLabs:RepeaterView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <ViewCell>
+                                                            <StackLayout HorizontalOptions="FillAndExpand" >
+                                                                <Label Text="{Binding text1}"></Label>
+                                                                <Button Text="Clickme" Clicked="OnExpanded"></Button>
+                                                            </StackLayout>
+                                                        </ViewCell>
+                                                    </DataTemplate>
+                                                </xLabs:RepeaterView.ItemTemplate>
+                                            </xLabs:RepeaterView>
+                                        </StackLayout>
+                                    </strapup:ExpansionPanel.ExpandedPanel>
+
+                                </strapup:ExpansionPanel>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>-->
+            
+            
+           
+
+            <!--<xLabs:RepeaterView x:TypeArguments="local:MyItem" ItemsSource="{Binding MyItems, Mode=TwoWay}"  >
+                <xLabs:RepeaterView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                        <StackLayout Spacing="10" BackgroundColor="Gray" Padding="10,0,10,5">
+                            <strapup:ExpansionPanel BackgroundColor="White" HideIcon="False">
+
+                                <strapup:ExpansionPanel.CollapsedPanel>
+                                        <StackLayout HorizontalOptions="FillAndExpand" >
+                                            <Label Text="{Binding text}" 
+                                            FontSize="Large" 
+                                            FontAttributes="Bold"></Label>
+                                        </StackLayout>
+                                </strapup:ExpansionPanel.CollapsedPanel>
+
+                                <strapup:ExpansionPanel.ExpandedPanel  >
+                                    <StackLayout>
+                                            <xLabs:RepeaterView x:TypeArguments="local:MyItem" ItemsSource="{Binding MyItems, Mode=TwoWay}"  >
+                                                <xLabs:RepeaterView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <ViewCell>
+                                                            <StackLayout HorizontalOptions="FillAndExpand" >
+                                                                <Label Text="{Binding text}" 
+                                                                    FontSize="Large" 
+                                                                    FontAttributes="Bold"></Label>  
+                                                            </StackLayout>
+                                                        </ViewCell>
+                                                    </DataTemplate>
+                                                </xLabs:RepeaterView.ItemTemplate>
+                                            </xLabs:RepeaterView>
+                                     </StackLayout>
+                                </strapup:ExpansionPanel.ExpandedPanel>
+
+                            </strapup:ExpansionPanel>
+                        </StackLayout>      
+                      </ViewCell>
+                     </DataTemplate>
+                </xLabs:RepeaterView.ItemTemplate>
+            </xLabs:RepeaterView>-->
+
+
+
+
+
+            <strapup:ExpansionPanel BackgroundColor="White" HideIcon="False" Command="{Binding PassedInMethodCommand}" >
+                <strapup:ExpansionPanel.CollapsedPanel>
+                    <StackLayout>
+                        <Label Text="{Binding CollapsedText}" 
+                            FontSize="Large" 
+                            FontAttributes="Bold"></Label>
+                    </StackLayout>
+                </strapup:ExpansionPanel.CollapsedPanel>
+                <strapup:ExpansionPanel.ExpandedPanel>
+                    <StackLayout>
+                        <Entry Text="{Binding IsLoading, Mode=TwoWay}"></Entry>
+                        <Label Text="Mote Stuff"></Label>
+                        <ListView ItemsSource="{Binding MyItems, Mode=TwoWay}" HasUnevenRows="True">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <Label Text="{Binding text}"></Label>
+                                            <Label Text="{Binding details}"></Label>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </strapup:ExpansionPanel.ExpandedPanel>
+            </strapup:ExpansionPanel>
+
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout Spacing="0"
+            xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="StrapUp.Forms.Controls.ExpansionPanel">
+        <StackLayout x:Name="xCollapsedPanelWrapper"  Orientation="Horizontal" 
+                     HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="FillAndExpand"                 
+                     Spacing="0"
+                     Padding="24, 0, 24, 0"
+                     HeightRequest="48">
+            <StackLayout x:Name="xCollapsedPanel" 
+                         HorizontalOptions="StartAndExpand" 
+                         VerticalOptions="Center">
+            </StackLayout>
+            <StackLayout x:Name="xIcon" VerticalOptions="Center">
+                <Label x:Name="Arrow"></Label>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout x:Name="xExpandedPanel" 
+                     HorizontalOptions="FillAndExpand" 
+                     IsVisible="false"
+                     VerticalOptions="FillAndExpand"
+                     Spacing="0" 
+                     Orientation="Vertical"
+                     Padding="24, 16, 24, 16 ">
+        </StackLayout>
+</StackLayout>
