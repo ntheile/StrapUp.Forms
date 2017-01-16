@@ -33,8 +33,10 @@ Card View
 
 Expansion Panel
 ----------------
+Collapsed                  |  Expanded
+:-------------------------:|:-------------------------:
+![Screenshot](/TestApp/TestApp/Images/ExpansionPanelColl.png) | ![Screenshot](/TestApp/TestApp/Images/ExpansionPanelExpanded.png) 
 
-![Screenshot](/TestApp/TestApp/Images/ExpansionPanelColl.png)![Screenshot](/TestApp/TestApp/Images/ExpansionPanelExpanded.png) 
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
