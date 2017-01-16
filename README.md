@@ -13,7 +13,7 @@ To use these controls on iOS goto the AppDelegate.cs and add the following code 
 
 Card View
 ----------
-```xml
+```xaml
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
