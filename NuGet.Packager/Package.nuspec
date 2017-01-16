@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>StrapUp.Forms.Controls</id>
+    <version>1.0.1</version>
+    <title>StrapUp.Forms.Controls</title>
+    <authors>Nick Tee</authors>
+    <owners>Nick Tee</owners>
+    <description>
+      Free Open source Xamarin Forms Controls Library targeting Profile 111, iOS, Android and UWP. Card View, Expansion Panel
+    </description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>
+      Free Open source Xamarin Forms Controls Library targeting Profile 111, iOS, Android and UWP. Card View, Expansion Panel
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/ntheile/StrapUp.Forms</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <copyright>Copyright  2017</copyright>
+    <tags>Xamarin Forms Controls Android iOS UWP</tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+  </files>
+</package>

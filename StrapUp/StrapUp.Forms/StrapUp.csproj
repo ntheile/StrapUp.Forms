@@ -94,4 +94,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Target Name="AfterBuild">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(SolutionDir)NuGet.Packager\lib" ContinueOnError="true" />
+  </Target>
 </Project>
