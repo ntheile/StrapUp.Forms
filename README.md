@@ -1,5 +1,11 @@
 # StrapUp.Forms
-Free Open source Xamarin Forms Controls Library. Card View, Expansion Panel
+Free Open source Xamarin Forms Controls Library. 
+
+Controls:
+- Card View
+- Expansion Panel. 
+
+Stay tuned...more controls to come (Windows Live Tile and alot of the material design components https://material.io/guidelines/)
 
 To Install
 ------------
