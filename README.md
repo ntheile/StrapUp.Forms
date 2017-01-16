@@ -13,7 +13,8 @@ To use these controls on iOS goto the AppDelegate.cs and add the following code 
 
 Card View
 ----------
-`<?xml version="1.0" encoding="utf-8" ?>
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:strapup="clr-namespace:StrapUp.Forms.Controls;assembly=StrapUp.Forms"
@@ -24,11 +25,13 @@ Card View
                           CardViewDetail="Detail" 
                           Source="http://www.zeegmo.com/images/Android-Logo_large.jpg"  />
     </StackLayout>
-</ContentPage>`
+</ContentPage>
+```
 
 Expansion Panel
 ----------------
-`<?xml version="1.0" encoding="utf-8" ?>
+```csharp
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:strapup="clr-namespace:StrapUp.Forms.Controls;assembly=StrapUp.Forms"
@@ -72,4 +75,5 @@ Expansion Panel
 
         </StackLayout>
     </ScrollView>
-</ContentPage>`
+</ContentPage>
+```
