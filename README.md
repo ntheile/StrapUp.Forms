@@ -34,7 +34,9 @@ Card View
 Expansion Panel
 ----------------
 
-![Screenshot](/TestApp/Images/ExpansionPanelColl.png) ![Screenshot](/TestApp/Images/ExpansionPanelExpanded.png) 
+![Screenshot](/TestApp/Images/ExpansionPanelColl.png)
+![Screenshot](/TestApp/Images/ExpansionPanelExpanded.png) 
+
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
