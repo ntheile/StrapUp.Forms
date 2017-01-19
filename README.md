@@ -1,7 +1,7 @@
 # StrapUp.Forms
 Free Open source Xamarin Forms Controls Library. 
 
-<img src="/TestApp/TestApp/Images/StrapUpLogo/StrapUpLogoBrand.png" alt="Logo" width="200"/>
+<img src="/TestApp/TestApp/Images/StrapUpLogo/StrapUpLogoBrand.png" alt="Logo" width="250"/>
 
 
 Controls:
