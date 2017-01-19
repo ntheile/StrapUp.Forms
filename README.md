@@ -1,6 +1,9 @@
 # StrapUp.Forms
 Free Open source Xamarin Forms Controls Library. 
 
+![Screenshot](/TestApp/TestApp/Images/StrapUp/StrapUpLogoBrand.png)
+
+
 Controls:
 - Card View
 - Expansion Panel. 
