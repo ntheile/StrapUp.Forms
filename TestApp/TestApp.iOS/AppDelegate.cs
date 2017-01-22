@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Foundation;
+using MaterialIcons.FormsPlugin.iOS;
 using UIKit;
 
 namespace TestApp.iOS
@@ -22,8 +23,14 @@ namespace TestApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+			Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeModule())
+				  .With(new Plugin.Iconize.Fonts.MaterialModule());
             global::Xamarin.Forms.Forms.Init();
+			FormsPlugin.Iconize.iOS.IconControls.Init();
+			MaterialIconControls.Init();
+
             StrapUp.Forms.Controls.Init.Controls();
+
             LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }

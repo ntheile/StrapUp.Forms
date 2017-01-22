@@ -17,7 +17,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
@@ -144,6 +144,30 @@
       <HintPath>..\..\packages\XLabs.Serialization.2.3.0-pre05\lib\NETStandard1.0\XLabs.Serialization.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Plugin.Iconize">
+      <HintPath>..\..\packages\Xam.Plugin.Iconize.1.0.10\lib\MonoAndroid10\Plugin.Iconize.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Iconize.Droid">
+      <HintPath>..\..\packages\Xam.Plugin.Iconize.1.0.10\lib\MonoAndroid10\Plugin.Iconize.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsPlugin.Iconize">
+      <HintPath>..\..\packages\Xam.FormsPlugin.Iconize.1.0.10\lib\MonoAndroid10\FormsPlugin.Iconize.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsPlugin.Iconize.Droid">
+      <HintPath>..\..\packages\Xam.FormsPlugin.Iconize.1.0.10\lib\MonoAndroid10\FormsPlugin.Iconize.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Iconize.FontAwesome.Droid">
+      <HintPath>..\..\packages\Xam.Plugin.Iconize.FontAwesome.1.0.10\lib\MonoAndroid10\Plugin.Iconize.FontAwesome.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Iconize.Material.Droid">
+      <HintPath>..\..\packages\Xam.Plugin.Iconize.Material.1.0.10\lib\MonoAndroid10\Plugin.Iconize.Material.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialIcons.FormsPlugin.Abstractions">
+      <HintPath>..\..\packages\Xam.FormsPlugin.MaterialIcons.0.0.1-alpha\lib\MonoAndroid10\MaterialIcons.FormsPlugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialIcons.FormsPlugin.Droid">
+      <HintPath>..\..\packages\Xam.FormsPlugin.MaterialIcons.0.0.1-alpha\lib\MonoAndroid10\MaterialIcons.FormsPlugin.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -176,7 +200,7 @@
       <Name>StrapUp</Name>
     </ProjectReference>
     <ProjectReference Include="..\TestApp\TestApp.csproj">
-      <Project>{f38e21fe-4734-4877-a5a5-dc87b14a6bed}</Project>
+      <Project>{58D3A4AD-D477-4FD7-9A73-AEE2A0DDF8BC}</Project>
       <Name>TestApp</Name>
     </ProjectReference>
   </ItemGroup>

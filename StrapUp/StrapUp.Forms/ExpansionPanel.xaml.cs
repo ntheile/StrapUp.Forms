@@ -20,7 +20,7 @@ namespace StrapUp.Forms.Controls
         {
             IsVis = false;
             InitializeComponent();
-            Arrow.Text = "v";
+            Arrow.Text = "fa-chevron-down";
 
             if (userTappedMethod == null)
             {
@@ -66,7 +66,7 @@ namespace StrapUp.Forms.Controls
             var me = sender as StackLayout;   
             if (xExpandedPanel.IsVisible == false) // show
             {
-                Arrow.Text = "^";
+                Arrow.Text = "fa-chevron-up";
                 xExpandedPanel.IsVisible = true;
                 //xExpandedPanel.ForceLayout();
 
@@ -79,7 +79,7 @@ namespace StrapUp.Forms.Controls
             }
             else //hide
             {
-                Arrow.Text = "v";
+                Arrow.Text = "fa-chevron-down";
                 xExpandedPanel.IsVisible = false;
                 //xExpandedPanel.ForceLayout();
 

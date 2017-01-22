@@ -173,6 +173,30 @@
       <HintPath>..\..\packages\XLabs.Serialization.2.3.0-pre05\lib\NETStandard1.0\XLabs.Serialization.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Plugin.Iconize">
+      <HintPath>..\..\packages\Xam.Plugin.Iconize.1.0.10\lib\Xamarin.iOS10\Plugin.Iconize.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Iconize.iOS">
+      <HintPath>..\..\packages\Xam.Plugin.Iconize.1.0.10\lib\Xamarin.iOS10\Plugin.Iconize.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Iconize.FontAwesome.iOS">
+      <HintPath>..\..\packages\Xam.Plugin.Iconize.FontAwesome.1.0.10\lib\Xamarin.iOS10\Plugin.Iconize.FontAwesome.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsPlugin.Iconize">
+      <HintPath>..\..\packages\Xam.FormsPlugin.Iconize.1.0.10\lib\Xamarin.iOS10\FormsPlugin.Iconize.dll</HintPath>
+    </Reference>
+    <Reference Include="FormsPlugin.Iconize.iOS">
+      <HintPath>..\..\packages\Xam.FormsPlugin.Iconize.1.0.10\lib\Xamarin.iOS10\FormsPlugin.Iconize.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Iconize.Material.iOS">
+      <HintPath>..\..\packages\Xam.Plugin.Iconize.Material.1.0.10\lib\Xamarin.iOS10\Plugin.Iconize.Material.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialIcons.FormsPlugin.Abstractions">
+      <HintPath>..\..\packages\Xam.FormsPlugin.MaterialIcons.0.0.1-alpha\lib\Xamarin.iOS10\MaterialIcons.FormsPlugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialIcons.FormsPlugin.iOS">
+      <HintPath>..\..\packages\Xam.FormsPlugin.MaterialIcons.0.0.1-alpha\lib\Xamarin.iOS10\MaterialIcons.FormsPlugin.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\StrapUp\StrapUp.Forms\StrapUp.csproj">
@@ -180,7 +204,7 @@
       <Name>StrapUp</Name>
     </ProjectReference>
     <ProjectReference Include="..\TestApp\TestApp.csproj">
-      <Project>{f38e21fe-4734-4877-a5a5-dc87b14a6bed}</Project>
+      <Project>{58D3A4AD-D477-4FD7-9A73-AEE2A0DDF8BC}</Project>
       <Name>TestApp</Name>
     </ProjectReference>
   </ItemGroup>

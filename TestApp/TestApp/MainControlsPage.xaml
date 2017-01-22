@@ -2,9 +2,46 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:TestApp"
+		     xmlns:iconize="clr-namespace:FormsPlugin.Iconize;assembly=FormsPlugin.Iconize"
+		     xmlns:mi="clr-namespace:MaterialIcons.FormsPlugin.Abstractions;assembly=MaterialIcons.FormsPlugin.Abstractions"
              x:Class="TestApp.MainControlsPage">
 
+   <StackLayout Padding="10,10,10,0">
+	<Frame BackgroundColor="White" Padding="0,0,0,0" HasShadow="true" OutlineColor="Transparent">
+		<StackLayout Spacing="0" Padding="0,0,0,0">
+		<Image HeightRequest="100"
+	            Source="https://www.smashingmagazine.com/images/nature-wallpapers/3.jpg"
+	            HorizontalOptions="FillAndExpand"
+	            VerticalOptions="StartAndExpand"
+	            Aspect="AspectFill"/>
+	            <StackLayout Padding="16,24,16,16" Orientation="Horizontal">
+	            	<Label HorizontalOptions="StartAndExpand">Context</Label>
+	            	<mi:IconLabel HorizontalOptions="End" Icon="ic_more_vert" FontSize="24" TextColor="#9E9E9E" />
+					
+				</StackLayout>
+		</StackLayout>
+	</Frame>
 
+	<StackLayout Padding="0,20,0,0"></StackLayout>
+		
+	<Frame BackgroundColor="White" Padding="0,0,0,0"  HasShadow="true" OutlineColor="Transparent">
+		<StackLayout Spacing="0" Padding="0,0,0,0">
+		<Image HeightRequest="100"
+	            Source="https://www.smashingmagazine.com/images/nature-wallpapers/27-3.jpg"
+	            HorizontalOptions="FillAndExpand"
+	            VerticalOptions="StartAndExpand"
+	            Aspect="AspectFill"
+	            />
+	            <StackLayout Padding="16,24,16,16">
+	            <Label>Context</Label>
+				</StackLayout>
+
+		</StackLayout>
+			
+	</Frame>
+
+	<StackLayout Padding="0,20,0,0"></StackLayout>
+		
     <ListView ItemsSource="{Binding Pages}" ItemTapped="NavPage">
         <ListView.ItemTemplate>
             <DataTemplate>
@@ -12,6 +49,6 @@
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>
-
+    </StackLayout>
 </ContentPage>
  

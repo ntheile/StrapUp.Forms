@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using MaterialIcons.FormsPlugin.iOS;
 
 namespace TestApp.Droid
 {
@@ -21,7 +22,14 @@ namespace TestApp.Droid
 
             base.OnCreate(bundle);
 
+			Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeModule())
+				  .With(new Plugin.Iconize.Fonts.MaterialModule());
+
+			MaterialIconControls.Init();
+
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+			//FormsPlugin.Iconize.Droid.IconControls.Init(Resource.Id.toolbar, Resource.Id.tabs);
 
             LoadApplication(new App());
    
