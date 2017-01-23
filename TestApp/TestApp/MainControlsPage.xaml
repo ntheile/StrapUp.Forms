@@ -8,51 +8,6 @@
 
     <StackLayout Padding="10,10,10,0">
 
-
-
-
-		
-        <Frame BackgroundColor="White" Padding="0,0,0,0" 
-           HasShadow="true" OutlineColor="#9E9E9E">
-		<StackLayout Spacing="0" Padding="0,0,0,0">
-		<Image HeightRequest="100"
-	            Source="https://www.smashingmagazine.com/images/nature-wallpapers/3.jpg"
-	            HorizontalOptions="FillAndExpand"
-	            VerticalOptions="StartAndExpand"
-	            Aspect="AspectFill"/>
-	            <StackLayout Padding="16,24,16,16" Orientation="Horizontal">
-	            	<Label HorizontalOptions="StartAndExpand">Context</Label>
-                    <iconize:IconLabel Text="fa-ellipsis-v" 
-                                       FontFamily="FontAwesome" 
-                                       FontSize="24" 
-                                       TextColor="#9E9E9E"></iconize:IconLabel>
-
-                </StackLayout>
-		</StackLayout>
-	</Frame>
-
-	<StackLayout Padding="0,20,0,0"></StackLayout>
-		
-	<Frame BackgroundColor="White" Padding="0,0,0,0"  HasShadow="true" OutlineColor="Transparent">
-		<StackLayout Spacing="0" Padding="0,0,0,0">
-		<Image HeightRequest="100"
-	            Source="https://www.smashingmagazine.com/images/nature-wallpapers/27-3.jpg"
-	            HorizontalOptions="FillAndExpand"
-	            VerticalOptions="StartAndExpand"
-	            Aspect="AspectFill"
-	            />
-                <StackLayout Padding="16,24,16,16" Orientation="Horizontal">
-                    <Label HorizontalOptions="StartAndExpand">Context</Label>
-                    <mi:IconLabel HorizontalOptions="End" Icon="ic_more_vert" FontSize="24" TextColor="#9E9E9E" />
-
-                </StackLayout>
-
-            </StackLayout>
-			
-	</Frame>
-
-	<StackLayout Padding="0,20,0,0"></StackLayout>
-		
     <ListView ItemsSource="{Binding Pages}" ItemTapped="NavPage">
         <ListView.ItemTemplate>
             <DataTemplate>

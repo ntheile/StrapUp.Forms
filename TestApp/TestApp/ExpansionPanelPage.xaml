@@ -106,33 +106,19 @@
 
 
 
-
-
             <strapup:ExpansionPanel BackgroundColor="White" HideIcon="False" Command="{Binding PassedInMethodCommand}" >
                 <strapup:ExpansionPanel.CollapsedPanel>
                     <StackLayout>
-                        <Label Text="{Binding CollapsedText}" 
+                        <Label TextColor="#9E9E9E" Text="{Binding CollapsedText}" 
                             FontSize="Large" 
                             FontAttributes="Bold"></Label>
                     </StackLayout>
                 </strapup:ExpansionPanel.CollapsedPanel>
                 <strapup:ExpansionPanel.ExpandedPanel>
                     <StackLayout>
-                        <Entry Text="{Binding IsLoading, Mode=TwoWay}"></Entry>
-                        <Label Text="Mote Stuff"></Label>
-                        <ListView ItemsSource="{Binding MyItems, Mode=TwoWay}" HasUnevenRows="True">
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <ViewCell>
-                                        <StackLayout>
-                                            <Label Text="{Binding text}"></Label>
-                                            <Label Text="{Binding details}"></Label>
-                                        </StackLayout>
-                                    </ViewCell>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                        </ListView>
-                    </StackLayout>
+						<Label TextColor="#9E9E9E" HorizontalOptions="StartAndExpand">Expanded Panel Stacklayout Content</Label>
+                    	<Button Text="Submit"></Button>
+					</StackLayout>
                 </strapup:ExpansionPanel.ExpandedPanel>
             </strapup:ExpansionPanel>
 

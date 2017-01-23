@@ -11,7 +11,7 @@
 				AnimateCardClick="true">
 			<strapup:CardView.Stack>
 				<StackLayout Orientation="Horizontal">
-					<Label HorizontalOptions="StartAndExpand">Context</Label>
+					<Label  TextColor="#9E9E9E" HorizontalOptions="StartAndExpand">CardView Stacklayout Content</Label>
                     <iconize:IconLabel Text="fa-ellipsis-v" 
                                        FontFamily="FontAwesome" 
                                        FontSize="24" 

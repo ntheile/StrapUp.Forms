@@ -14,7 +14,16 @@ namespace StrapUp.Forms.Controls
 
         public CardView()
         {
-            InitializeComponent();
+			
+
+			InitializeComponent();
+
+			if (Device.OS == TargetPlatform.iOS)
+			{
+				Frame fr = (Frame)SL.Parent;
+				fr.OutlineColor = Color.Transparent;
+			}
+
 
         }
 
