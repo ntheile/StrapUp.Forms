@@ -44,9 +44,9 @@ Card View
 
 Expansion Panel
 ----------------
-Collapsed                  |  Expanded
-:-------------------------:|:-------------------------:
-![Screenshot](/TestApp/TestApp/Images/ExpansionPanelColl.png) | ![Screenshot](/TestApp/TestApp/Images/ExpansionPanelExpanded.png) 
+iOS                  |  Android    |     UWP
+:-------------------------:|:-------------------------:|:-------------------------:
+![Screenshot](/TestApp/TestApp/Images/ExpansionPanelIOS.png) | ![Screenshot](/TestApp/TestApp/Images/ExpansionPanelAndroid.png) | ![Screenshot](/TestApp/TestApp/Images/ExpansionPanelUWP.png)
 
 
 ```xaml
