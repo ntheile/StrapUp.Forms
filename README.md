@@ -46,9 +46,7 @@ Expansion Panel
 ----------------
 iOS                  |  Android    |     UWP
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="/TestApp/TestApp/Images/ExpansionPanelIOS.png" alt="Logo" width="250"/>
-|<img src="/TestApp/TestApp/Images/ExpansionPanelAndroid.png" alt="Logo" width="250"/>
-|<img src="/TestApp/TestApp/Images/ExpansionPanelUWP.png" alt="Logo" width="250"/> 
+<img src="/TestApp/TestApp/Images/ExpansionPanelIOS.png" alt="Logo" width="250"/> | <img src="/TestApp/TestApp/Images/ExpansionPanelAndroid.png" alt="Logo" width="250"/> | <img src="/TestApp/TestApp/Images/ExpansionPanelUWP.png" alt="Logo" width="250"/> 
 
 
 ```xaml
