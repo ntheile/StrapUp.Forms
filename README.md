@@ -27,7 +27,7 @@ Card View
 
 iOS                  |  Android    |     UWP
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="/TestApp/TestApp/Images/CardViewIOS.png" alt="Logo" width="250"/> | <img src="/TestApp/TestApp/Images/CardViewAndroid.png" alt="Logo" width="250"/> | <img src="/TestApp/TestApp/Images/CardViewUWP.png" alt="Logo" width="250"/> 
+<img src="/TestApp/TestApp/Images/CardViewIOS.png" alt="Logo" width="250"/> | <img src="/TestApp/TestApp/Images/CardviewAndroid.png" alt="Logo" width="255"/> | <img src="/TestApp/TestApp/Images/CardViewUWP.png" alt="Logo" width="300"/> 
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
