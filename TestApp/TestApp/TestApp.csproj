@@ -73,6 +73,10 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Images\CardViewIOS.png" />
+    <None Include="Images\ExpansionPanelIOS.png" />
+    <None Include="Images\CardviewAndroid.png" />
+    <None Include="Images\ExpansionPanelAndroid.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ExpansionPanelPage.xaml">
