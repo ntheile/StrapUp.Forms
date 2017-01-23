@@ -1,6 +1,11 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+    "Xam.FormsPlugin.Iconize": "1.5.0.13-beta",
+    "Xam.FormsPlugin.MaterialIcons": "0.0.1-alpha",
+    "Xam.Plugin.Iconize": "1.5.0.13-beta",
+    "Xam.Plugin.Iconize.FontAwesome": "1.5.0.13-beta",
+    "Xam.Plugin.Iconize.Material": "1.5.0.13-beta",
     "Xamarin.Forms": "2.3.3.180",
     "XLabs.Forms": "2.3.0-pre05"
   },

@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 namespace TestApp.UWP
 {
     /// <summary>
@@ -59,6 +60,11 @@ namespace TestApp.UWP
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
                 Xamarin.Forms.Forms.Init(e);
+                Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeModule())
+                  .With(new Plugin.Iconize.Fonts.MaterialModule());
+                FormsPlugin.Iconize.UWP.IconControls.Init();
+                
+              
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
