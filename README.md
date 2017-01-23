@@ -16,11 +16,16 @@ Install the nuget package in each of your projects:
 
 `Install-Package StrapUp.Forms.Controls`
 
+You also need to install iconize for the FontAwesome icons:
+https://github.com/jsmarcus/Xamarin.Plugins/tree/master/Iconize
+
 For iOS:
 To use these controls on iOS goto the AppDelegate.cs and add the following code before LoadApplication:
 `StrapUp.Forms.Controls.Init.Controls();`
 
 I have tested targeting Profile 111 for iOS, Android and UWP apps.
+
+
 
 Card View
 ----------
@@ -34,12 +39,25 @@ iOS                  |  Android    |     UWP
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:strapup="clr-namespace:StrapUp.Forms.Controls;assembly=StrapUp.Forms"
+		     xmlns:iconize="clr-namespace:FormsPlugin.Iconize;assembly=FormsPlugin.Iconize"
              x:Class="TestApp.CardViewPage"
              Padding="20,20,20,20">
     <StackLayout>
-        <strapup:CardView CardViewText="Text" 
-                          CardViewDetail="Detail" 
-                          Source="http://www.zeegmo.com/images/Android-Logo_large.jpg"  />
+
+		<strapup:CardView Source="https://www.smashingmagazine.com/images/nature-wallpapers/3.jpg"
+				AnimateCardClick="true">
+			<strapup:CardView.Stack>
+				<StackLayout Orientation="Horizontal">
+					<Label TextColor="#9E9E9E" HorizontalOptions="StartAndExpand">
+					CardView Stacklayout Content</Label>
+                    <iconize:IconLabel Text="fa-ellipsis-v" 
+                                       FontFamily="FontAwesome" 
+                                       FontSize="24" 
+                                       TextColor="#9E9E9E"></iconize:IconLabel>
+				</StackLayout>
+			</strapup:CardView.Stack>
+		</strapup:CardView>
+			
     </StackLayout>
 </ContentPage>
 ```
