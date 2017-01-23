@@ -2,11 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:strapup="clr-namespace:StrapUp.Forms.Controls;assembly=StrapUp.Forms"
+		     xmlns:iconize="clr-namespace:FormsPlugin.Iconize;assembly=FormsPlugin.Iconize"
              x:Class="TestApp.CardViewPage"
              Padding="20,20,20,20">
     <StackLayout>
-        <strapup:CardView CardViewText="Text" 
-                          CardViewDetail="Detail" 
-                          Source="http://www.zeegmo.com/images/Android-Logo_large.jpg"  />
+
+		<strapup:CardView Source="https://www.smashingmagazine.com/images/nature-wallpapers/3.jpg"
+				AnimateCardClick="true">
+			<strapup:CardView.Stack>
+				<StackLayout Orientation="Horizontal">
+					<Label HorizontalOptions="StartAndExpand">Context</Label>
+                    <iconize:IconLabel Text="fa-ellipsis-v" 
+                                       FontFamily="FontAwesome" 
+                                       FontSize="24" 
+                                       TextColor="#9E9E9E"></iconize:IconLabel>
+				</StackLayout>
+			</strapup:CardView.Stack>
+		</strapup:CardView>
+			
     </StackLayout>
 </ContentPage>

@@ -8,6 +8,10 @@
 
     <StackLayout Padding="10,10,10,0">
 
+
+
+
+		
         <Frame BackgroundColor="White" Padding="0,0,0,0" 
            HasShadow="true" OutlineColor="#9E9E9E">
 		<StackLayout Spacing="0" Padding="0,0,0,0">
