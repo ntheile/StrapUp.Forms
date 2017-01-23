@@ -25,7 +25,9 @@ I have tested targeting Profile 111 for iOS, Android and UWP apps.
 Card View
 ----------
 
-![Screenshot](/TestApp/TestApp/Images/CardView.png)
+iOS                  |  Android    |     UWP
+:-------------------------:|:-------------------------:|:-------------------------:
+<img src="/TestApp/TestApp/Images/CardViewIOS.png" alt="Logo" width="250"/> | <img src="/TestApp/TestApp/Images/CardViewAndroid.png" alt="Logo" width="250"/> | <img src="/TestApp/TestApp/Images/CardViewUWP.png" alt="Logo" width="250"/> 
 
 ```xaml
 <?xml version="1.0" encoding="utf-8" ?>
