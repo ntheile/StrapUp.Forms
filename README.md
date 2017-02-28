@@ -23,7 +23,7 @@ For iOS:
 To use these controls on iOS goto the AppDelegate.cs and add the following code before LoadApplication:
 `StrapUp.Forms.Controls.Init.Controls();`
 
-I have tested targeting Profile 111 for iOS, Android and UWP apps.
+I have tested targeting Profile 111 for iOS, Android, UWP, and Windows 8.1 apps.
 
 
 
