@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestApp"
+             xmlns:strapup="clr-namespace:StrapUp.Forms.Controls;assembly=StrapUp.Forms"
+             x:Class="TestApp.MultiSelectJumpListPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="MultiSelectJumpListToolbarItem" Command="{Binding MultiSelectJumpListGetSelectedItemsCommand}" Text="Get Items" />
+    </ContentPage.ToolbarItems>
+    <strapup:MultiSelectJumpList x:Name="MultiSelectableJumpList">
+        <strapup:MultiSelectJumpList.MultiSelectJumpListHolder>
+            <StackLayout>
+                <ListView x:Name="MultiSelectJumpList"
+                      ItemsSource="{Binding MultiSelectJumpListGrouped, Mode=TwoWay}"
+                      IsGroupingEnabled="true"
+                      GroupShortNameBinding="{Binding Key}"
+                      AutomationId="xMultiSelectJumpListView"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None">
+                    <ListView.GroupHeaderTemplate>
+                        <DataTemplate>
+                            <ViewCell Height="1">
+                                <Grid />
+                            </ViewCell>
+                            <!--<local:MultiSelectJumpListHeaderCell Name="{Binding MultiSelectJumpListKey, Mode=TwoWay}" />-->
+                        </DataTemplate>
+                    </ListView.GroupHeaderTemplate>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <local:MultiSelectJumpListSelectableCell Name="{Binding Name, Mode=TwoWay}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </strapup:MultiSelectJumpList.MultiSelectJumpListHolder>
+        <strapup:MultiSelectJumpList.MultiSelectJumpListEndOfViewButtonHolder>
+            <StackLayout>
+                <Button x:Name="MultiSelectJumpListButton" Command="{Binding MultiSelectJumpListGetSelectedItemsCommand}" />
+            </StackLayout>
+        </strapup:MultiSelectJumpList.MultiSelectJumpListEndOfViewButtonHolder>
+    </strapup:MultiSelectJumpList>
+</ContentPage>

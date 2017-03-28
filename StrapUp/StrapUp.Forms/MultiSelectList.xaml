@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout Spacing="0"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StrapUp.Forms.Controls.MultiSelectList">
+    <ScrollView>
+        <StackLayout x:Name="xMultiSelectListHolder" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <!--<ListView x:Name="MultiSelectableList" ItemsSource="{Binding Items, Mode=TwoWay}" SeparatorVisibility="Default">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <SelectableCell Name="{Binding Item.Name}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+            <!--<StackLayout x:Name="xMultiSelectableToolbarHolder">
+                --><!--<ToolbarItem x:Name="MultiSelectableToolbarItem" Command="{Binding GetSelectedItemsCommand}" />--><!--
+            </StackLayout>-->
+            <StackLayout x:Name="xMultiSelectListEndOfViewButtonHolder" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+                <!--<Button x:Name="MultiSelectListButton" Command="{Binding GetSelectedItemsCommand}" />-->
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</StackLayout>

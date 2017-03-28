@@ -48,11 +48,20 @@
     <Compile Include="ExpansionPanelPage.xaml.cs">
       <DependentUpon>ExpansionPanelPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="JumpListPage.xaml.cs">
+      <DependentUpon>JumpListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MultiSelectJumpListPage.xaml.cs">
+      <DependentUpon>MultiSelectJumpListPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainControlsPage.xaml.cs">
       <DependentUpon>MainControlsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MultiSelectPage.xaml.cs">
+      <DependentUpon>MultiSelectPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingsPage.xaml.cs">
@@ -153,7 +162,22 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Images\" />
+    <EmbeddedResource Include="MultiSelectPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MultiSelectJumpListPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="JumpListPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

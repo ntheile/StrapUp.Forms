@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using StrapUp.Forms.Controls;
+﻿using StrapUp.Forms.Controls;
 
 using Xamarin.Forms;
 namespace TestApp
@@ -17,12 +12,6 @@ namespace TestApp
 			CardView cv = new CardView();
 
 			cv.Source = "";
-
-
-
-
-
-
         }
     }
 }

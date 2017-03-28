@@ -29,7 +29,7 @@ namespace TestApp.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-			//FormsPlugin.Iconize.Droid.IconControls.Init(Resource.Id.toolbar, Resource.Id.tabs);
+            //FormsPlugin.Iconize.Droid.IconControls.Init(Resource.Id.toolbar, Resource.Id.tabs);
 
             LoadApplication(new App());
    

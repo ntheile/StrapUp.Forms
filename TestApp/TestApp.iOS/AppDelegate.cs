@@ -26,7 +26,7 @@ namespace TestApp.iOS
 			Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeModule())
 				  .With(new Plugin.Iconize.Fonts.MaterialModule());
             global::Xamarin.Forms.Forms.Init();
-			FormsPlugin.Iconize.iOS.IconControls.Init();
+            FormsPlugin.Iconize.iOS.IconControls.Init();
 			MaterialIconControls.Init();
 
             StrapUp.Forms.Controls.Init.Controls();

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout Spacing="0"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StrapUp.Forms.Controls.MultiSelectJumpList">
+    <StackLayout x:Name="xMultiSelectJumpListHolder" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <!--<ListView x:Name="JumpList"
+                      ItemsSource="{Binding MultiSelectJumpListGrouped, Mode=TwoWay}"
+                      IsGroupingEnabled="true"
+                      GroupShortNameBinding="{Binding Key}"
+                      AutomationId="xMultiSelectJumpListView"
+                      HasUnevenRows="True"
+                      SeparatorVisibility="None">
+            <ListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <ViewCell Height="1">
+                        <Grid />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.GroupHeaderTemplate>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <c:MultiSelectJumpListSelectableCell Name="{Binding Name, Mode=TwoWay}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+        <StackLayout x:Name="xMultiSelectJumpListEndOfViewButtonHolder" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand">
+            <!--<Button x:Name="MultiSelectJumpListButton" Command="{Binding GetSelectedItemsCommand}" />-->
+        </StackLayout>
+    </StackLayout>
+</StackLayout>

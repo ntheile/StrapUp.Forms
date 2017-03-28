@@ -15,6 +15,20 @@ namespace TestApp.ViewModels
     /// </summary>
     public class _BaseViewModel: INotifyPropertyChanged
     {
+        private string _isLoading = "Loading...";
+        public string IsLoading
+        {
+            get { return _isLoading; }
+            set
+            {
+                if (_isLoading != value)
+                {
+                    _isLoading = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         public INavigation Navigation;
 
         // Navigation in ViewModels in Xamarin Forms

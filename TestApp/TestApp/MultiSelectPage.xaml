@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestApp"
+             xmlns:strapup="clr-namespace:StrapUp.Forms.Controls;assembly=StrapUp.Forms"
+             x:Class="TestApp.MultiSelectPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="MultiSelectableToolbarItem" Command="{Binding GetSelectedItemsCommand}" Text="Get Items" />
+    </ContentPage.ToolbarItems>
+    <strapup:MultiSelectList x:Name="MultiSelectableList">
+        <strapup:MultiSelectList.MultiSelectListHolder>
+            <StackLayout>
+                <ListView ItemsSource="{Binding MultiSelectItems, Mode=TwoWay}" SeparatorVisibility="Default">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <local:MultiSelectableCell Name="{Binding Item.Name}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </strapup:MultiSelectList.MultiSelectListHolder>
+        <strapup:MultiSelectList.MultiSelectListEndOfViewButtonHolder>
+            <StackLayout>
+                <Button x:Name="MultiSelectListButton" Command="{Binding GetSelectedItemsCommand}" />
+            </StackLayout>
+        </strapup:MultiSelectList.MultiSelectListEndOfViewButtonHolder>
+    </strapup:MultiSelectList>
+    <!--Experimental-->
+    <!--<strapup:MultiSelectList StringAndBoolCollection="{Binding Collection}" CommandButtonText="Send Emails" ToolBarButton="True" EndOfViewButton="False" CommandButtonExecuteCommand="SendEmails()" />-->
+</ContentPage>

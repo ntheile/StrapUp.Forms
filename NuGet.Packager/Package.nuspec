@@ -2,9 +2,9 @@
 <package >
   <metadata>
     <id>StrapUp.Forms.Controls</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>StrapUp.Forms.Controls</title>
-    <authors>Nick Tee</authors>
+    <authors>Nick Tee, Erik Cee</authors>
     <owners>Nick Tee</owners>
     <description>
       Free Open source Xamarin Forms Controls Library targeting Profile 111, iOS, Android and UWP. Card View, Expansion Panel

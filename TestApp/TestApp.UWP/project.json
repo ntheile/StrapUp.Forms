@@ -1,6 +1,8 @@
 ﻿{
   "dependencies": {
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0",
+    "OxyPlot.Core": "1.0.0",
+    "OxyPlot.Xamarin.Forms": "1.0.0",
     "Xam.FormsPlugin.Iconize": "1.5.0.13-beta",
     "Xam.FormsPlugin.MaterialIcons": "0.0.1-alpha",
     "Xam.Plugin.Iconize": "1.5.0.13-beta",

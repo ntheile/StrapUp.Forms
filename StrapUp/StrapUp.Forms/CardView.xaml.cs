@@ -11,22 +11,15 @@ namespace StrapUp.Forms.Controls
 {
     public partial class CardView : Frame
     {
-
         public CardView()
         {
-			
-
 			InitializeComponent();
-
 			if (Device.OS == TargetPlatform.iOS)
 			{
 				Frame fr = (Frame)SL.Parent;
 				fr.OutlineColor = Color.Transparent;
 			}
-
-
         }
-
 
 		#region Overrides
 		protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)

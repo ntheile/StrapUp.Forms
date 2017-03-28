@@ -20,7 +20,11 @@ namespace TestApp
 
             Pages = new ObservableCollection<MyPage> {
                new MyPage { page="CardView" },
-               new MyPage { page="ExpansionPanel" }
+               new MyPage { page="ExpansionPanel" },
+               new MyPage { page="DonutChart" },
+               new MyPage { page="MultiSelect" },
+               new MyPage { page="MultiSelectJumpList" },
+               new MyPage { page="JumpList" }
             };
 
 

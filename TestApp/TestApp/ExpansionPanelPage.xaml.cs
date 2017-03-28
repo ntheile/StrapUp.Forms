@@ -72,20 +72,6 @@ namespace TestApp
             }
         }
 
-        private string _isLoading = "Loading...";
-        public string IsLoading
-        {
-            get { return _isLoading; }
-            set
-            {
-                if (_isLoading != value)
-                {
-                    _isLoading = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-
         private string _collapsedText = "collapsed text...";
         public string CollapsedText
         {
