@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:strapup="clr-namespace:StrapUp.Forms.Controls;assembly=StrapUp.Forms"
+             x:Class="TestApp.SquareImageButtonPage">
+    <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
+        <strapup:SquareImageButton HeightRequest="150" WidthRequest="150" Source="Default.png"  AnimateCardClick="True" Click="Button_Clicked" 
+                                                            ClickParameter="{Binding .}" ShadeColor="Fuchsia" ShadeOpacity=".5">
+            <strapup:SquareImageButton.Stack>
+                <StackLayout>
+
+                    <Label x:Name="xHeadlineText" FontAttributes="Bold" Text="Headline Text" FontSize="Medium" TextColor="White" HorizontalTextAlignment="Center" LineBreakMode="WordWrap"></Label>
+                    <Label x:Name="xBottomText" FontAttributes="Bold" Text="Detail Text" TextColor="#cccccc" FontSize="Small" HorizontalTextAlignment="Center"></Label>
+                </StackLayout>
+            </strapup:SquareImageButton.Stack>
+        </strapup:SquareImageButton>
+
+    </StackLayout>
+</ContentPage>

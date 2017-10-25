@@ -67,6 +67,9 @@
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SquareImageButtonPage.xaml.cs">
+      <DependentUpon>SquareImageButtonPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\_BaseViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +179,12 @@
   <ItemGroup>
     <EmbeddedResource Include="JumpListPage.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SquareImageButtonPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

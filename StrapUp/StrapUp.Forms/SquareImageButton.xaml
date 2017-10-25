@@ -1,0 +1,28 @@
+﻿<controls:ExtendedFrame x:Name="xFrame"
+        xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="StrapUp.Forms.Controls.SquareImageButton"
+        xmlns:xreference="clr-namespace:Xamarin.Forms.Xaml"
+        xmlns:controls="clr-namespace:StrapUp.Forms.Controls;assembly=StrapUp.Forms"
+		BackgroundColor="White" 
+        BorderWidth=".25"
+        BorderColor="#999999"
+        Radius=".5"
+		Padding="0,0,0,0" 
+        HasShadow="true" 
+		OutlineColor="#9E9E9E">
+    <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="AL">
+
+        <Image x:Name="xImage" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Aspect="AspectFill"></Image>
+        <BoxView x:Name="xBoxView" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" ></BoxView>
+        <StackLayout x:Name="xStack" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" 
+                     HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Vertical" Padding="10,10,10,10" />
+        <!--<StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" 
+                     HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Orientation="Vertical" Padding="10,10,10,10">
+            <Label x:Name="xHeadlineText" FontAttributes="Bold" FontSize="Medium" TextColor="White" HorizontalTextAlignment="Center" LineBreakMode="WordWrap"></Label>
+            <Label x:Name="xBottomText" FontAttributes="Bold" TextColor="#cccccc" FontSize="Small" HorizontalTextAlignment="Center"></Label>-->
+
+
+    </AbsoluteLayout>
+
+</controls:ExtendedFrame>
